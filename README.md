@@ -1,4 +1,10 @@
-# Time Series Intelligence with Merlion
+# Time Series Intelligence
+
+<!-- portfolio-umbrella:start -->
+## Portfolio role
+
+This repository is intentionally maintained as a standalone primary repository in the consolidated Jors Academy portfolio. It is not used as a container for other projects.
+<!-- portfolio-umbrella:end -->
 
 A reproducible project demonstrating **forecasting**, **anomaly detection**, **multi-model benchmarking**, and **production-like rolling backtesting** with Salesforce's [Merlion](https://github.com/salesforce/Merlion) time-series library.
 
