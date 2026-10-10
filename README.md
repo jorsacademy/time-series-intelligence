@@ -267,3 +267,9 @@ The upstream `salesforce/Merlion` repository is archived and read-only, so this 
 - Merlion documentation: https://opensource.salesforce.com/Merlion/
 - Merlion technical report: https://arxiv.org/abs/2109.09265
 - statsmodels macrodata dataset: https://www.statsmodels.org/stable/datasets/generated/macrodata.html\n- Makridakis, Spiliotis, Assimakopoulos et al., *The M5 accuracy competition: Results, findings and conclusions*, International Journal of Forecasting, 2022.
+
+## CI scope
+
+The [native newsvendor CI](.github/workflows/native-ci.yml) runs deterministic numerical tests and the decision-focused demand forecasting benchmark on Python 3.10 and 3.11. It checks generated result artifacts, syntax and importable numerical dependencies.
+
+**Coverage boundary:** this fast job does **not** install or execute Salesforce Merlion, Prophet, rolling retraining, or the optional model-policy matrix. Those workflows require separate integration/dependency compatibility validation. A green native CI result is not a claim that every optional time-series model succeeds.
